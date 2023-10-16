@@ -28,4 +28,9 @@ public class BookImplService implements BookService{
     public Book CreateBook(Book book) {
         return bookRepositroy.save(book);
     }
+
+    @Override
+    public void delete(Book book) {
+        this.bookRepositroy.delete(book);
+    }
 }

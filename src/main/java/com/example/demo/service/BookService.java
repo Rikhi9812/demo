@@ -12,4 +12,6 @@ public interface BookService {
     Optional<Book> getById(int id);
 
     Book CreateBook(Book book);
+
+    void delete(Book book);
 }

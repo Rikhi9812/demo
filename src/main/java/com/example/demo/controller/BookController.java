@@ -57,5 +57,12 @@ public class BookController {
         return this.bookService.CreateBook(b);
     }
 
+    @MutationMapping("deleteBook")
+    public String delete(@Argument int id) {
+        Book b = this.bookService.getById(id).get();
+        this.bookService.delete(b);
+        return "deleted";
+    }
+
 
 }
