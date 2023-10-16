@@ -1,7 +1,6 @@
 package com.example.demo;
 
 import com.example.demo.entity.Book;
-import com.example.demo.service.BookImplService;
 import com.example.demo.service.BookService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
